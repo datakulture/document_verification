@@ -3,7 +3,7 @@
 import streamlit as st
 
 #from io import StringIO 
-import cv2
+#import cv2
 #import matplotlib.pyplot as plt
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'  #this line is not needed in hosted app
