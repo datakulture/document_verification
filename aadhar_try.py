@@ -1,7 +1,12 @@
 
+#import cv2
 import streamlit as st
+
+#from io import StringIO 
+import cv2
+#import matplotlib.pyplot as plt
 import pytesseract
-#pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'  #this line is not needed in hosted app
 #from pytesseract import Output
 import re
 #import numpy as np
@@ -9,8 +14,10 @@ from PIL import Image
 
 
 #adding a file uploader
-
-file = st.file_uploader("Please choose a file")
+st.title("Aadhar number extractor")
+st.write("Optical Character Recognition (OCR) implementation in Python")
+        
+file = st.file_uploader("Please choose a file", type=["png","jpg"])
 
 if file is not None:
     img = Image.open(file)
