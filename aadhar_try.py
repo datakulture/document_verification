@@ -6,7 +6,7 @@ import streamlit as st
 #import cv2
 #import matplotlib.pyplot as plt
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'  #this line is not needed in hosted app
+#pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'  #this line is not needed in hosted app
 #from pytesseract import Output
 import re
 #import numpy as np
