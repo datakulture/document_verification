@@ -17,7 +17,7 @@ from PIL import Image
 st.title("Aadhar number extractor")
 st.write("Optical Character Recognition (OCR) implementation in Python")
         
-file = st.file_uploader("Please choose a file", type=["png","jpg"])
+file = st.file_uploader("Please choose a file")
 
 if file is not None:
     img = Image.open(file)
