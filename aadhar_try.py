@@ -12,8 +12,10 @@ import re
 #import numpy as np
 from PIL import Image
 
-st.sidebar.image("dk_logo.png", use_column_width=False)
+
 #adding a file uploader
+st.sidebar.image("dk_logo.png", use_column_width=False)
+
 st.title("Aadhar number extractor")
 st.write("Optical Character Recognition (OCR) implementation in Python")
         
